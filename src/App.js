@@ -1,19 +1,19 @@
 // import logo from './logo.svg';
 import './App.css';
-import { useEffect } from 'react';
-import {db} from './firedb'
+import {db} from '../src/firebase'
+import { useEffect, useState} from 'react';
+import Header from './Header'
 
 function App() {
-
+  const [user, setUser] = useState(null);
   useEffect(()=>{
-    console.log(db)
+  console.log(db)
   },[])
 
   return (
     <div className="App">
-      
-      
-    </div>
+        <Header user={user}></Header>
+    </div> 
   );
 }
 
