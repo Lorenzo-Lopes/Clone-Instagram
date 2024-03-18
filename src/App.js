@@ -5,7 +5,7 @@ import { useEffect, useState} from 'react';
 import Header from './Header'
 
 function App() {
-  const [user, setUser] = useState(null);
+  const [user, setUser] = useState();
   useEffect(()=>{
   console.log(db)
   },[])
