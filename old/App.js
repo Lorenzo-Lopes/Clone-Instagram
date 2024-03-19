@@ -1,6 +1,6 @@
 // import logo from './logo.svg';
 import './App.css';
-import {db} from '../src/fireBase'
+import {db} from '../src/firebase'
 import { useEffect, useState} from 'react';
 import Header from './Header'
 
