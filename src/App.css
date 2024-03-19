@@ -1,128 +1,131 @@
 *{
-    padding: 0px;
-    margin: 0px;
+    margin:0;
+    padding:0;
     box-sizing: border-box;
 }
+
 body{
-    background-color: rgb(230, 230, 230);
+    background-color:rgb(220,220,220);
 }
 
 .center{
     display: flex;
-    margin: 0 auto;
-    max-width: 1100px;
+    margin:0 auto;
     padding:0 2%;
+    max-width: 1100px;
 }
+
 .header{
-    background-color: rgb(255, 255, 255);
-    border-bottom:1px solid  rgb(180, 180, 180);
-    padding-top: 10px;
+    padding:10px 0;
+    background-color:white;
+    border-bottom:2px solid rgb(230,230,230);
 }
 
 .header__logo{
-    width: 50%;
+    width:50%;
 }
-.header__loginForm{
-    
-    width: 50%;
-    text-align: right;
 
+.header__loginForm{
+    width:50%;
+    text-align: right;
 }
+
 .header__loginForm form{
     display: inline-block;
-    
 }
-.header__loginForm input{
-    
-    margin-left: 10px;
 
-} 
-.header__loginForm [type = text],
-.header__loginForm [type = password]{
-    width: 120px;
-    height: 25px;
-    border: 1px solid #ccc;
-    padding-left: 5px;
+.header__loginForm input[type=text],
+.header__loginForm input[type=password]{
+    width:180px;
+    margin-right: 5px;
+    height:20px;
+    border:1px solid #ccc;
+    padding-left: 10px;
 }
-.header__loginForm [type = submit]{
-    height: 25px;
-    background-color:#0095f6 ;
-    border: 0;
-    cursor: pointer;
+
+.header__loginForm input[type=submit]{
+    background-color: #0095f6;
+    color:white;
+    border:0;
+    height:20px;
+    padding:0px 10px;
+    cursor:pointer;
+    border-radius:10px;
     font-size: 14px;
-    padding: 0 10px;
-    color: white;
-    border-radius: 5px;
 }
-.btn__criaConta{
+
+.btn__criarConta{
     display: inline-block;
 }
-.btn__criaConta a {
+
+.btn__criarConta a{
     font-size: 14px;
-    margin: 0 10px;
+    margin:0 10px;
 }
+
 .header__logadoInfo{
     text-align: right;
-    width: 50%;
+    width:50%;
 }
-.header__logadoInfo a {
-    background-color:#0095f6 ;
-    color: white;
-    padding: 3px 10px;
-    margin:  0 10px;
-    height: 25px;
-    border-radius: 5px;
-    cursor: pointer;
+
+.header__logadoInfo a{
+    margin:0 10px;
+    background-color: #0095f6;
+    color:white;
+    text-decoration: none;
+    padding:3px 10px;
+    cursor:pointer;
+    border-radius:10px;
     font-size: 14px;
 }
+
+
 .modalCriarConta{
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    position:fixed;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    background-color: rgba(0,0,0,0.5);
 }
+
 .formCriarConta{
     position: absolute;
-    left: 50%;
-    top: 45%;
-    transform: translate(-50%,-50%);
-    background-color: white;
-    padding: 30px;
-    width: 80%;
-    max-width: 450px;
-    border: 2px solid black;
-    border-radius: 20px;
-}
-.formCriarConta input{
-    border: 1px solid black;
-    font-size: 18px;
-    width: 100%;
-    height: 40px;
-    padding: 10px;
-    margin-top: 10px;
-
-}
-.formCriarConta input[type=submit]{
-    padding: 0;
-    background-color:#0095f6 ;
-    color: white;
-    font-size: 18px;
-    font-weight: bold;
-    border-radius: 20px;
-}
-.fecharModal{
-    position: absolute;
-    right: 5px;
-    top: 5px;
-    cursor: pointer;
-    font-weight: bolder;   
-    width: 30px;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+    background-color:white;
+    padding:20px;
+    width:80%;
+    max-width: 700px;
     text-align: center;
-    height: 30px;
-    line-height: 30px;
-    border-radius: 15px;
-    background-color:rgb(255, 89, 89) ;
+}
 
+.formCriarConta input{
+    width:100%;
+    height: 30px;
+    margin-bottom:10px;
+    padding-left: 10px;
+    border:1px solid #ccc;
+}
+
+.formCriarConta input[type=submit]{
+    background-color: #0095f6;
+    cursor: pointer;
+    color:white;
+}
+
+.close-modal-criar{
+    position: absolute;
+    right:-10px;
+    top:-10px;
+    cursor: pointer;
+    width:30px;
+    text-align: center;
+    color:white;
+    line-height: 30px;
+    height:30px;
+    border-radius:15px;
+    background-color: #0095f6;
 }

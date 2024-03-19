@@ -1,27 +1,18 @@
-import firebase from 'firebase/compat/app';
-import 'firebase/compat/auth';
-import 'firebase/compat/firestore';
-import'firebase/compat/storage'
-import 'firebase/compat/functions'
+import firebase from 'firebase';
 
-const firebaseConfig = {
-  apiKey: "AIzaSyBOK7x5N5UnjY4TDqndzH7l5tvdNIsWFRc",
-  authDomain: "todo-app-e3cf0.firebaseapp.com",
-  projectId: "todo-app-e3cf0",
-  storageBucket: "todo-app-e3cf0.appspot.com",
-  messagingSenderId: "940016886081",
-  appId: "1:940016886081:web:91686613f16b1b1f8001c0",
-  measurementId: "G-JHPC7TP12K"
-};
+const firebaseApp = firebase.initializeApp({
+    apiKey: "AIzaSyAk52eo0ITI4AJqIxCF-bEUY6YRNAqSk_0",
+    authDomain: "instagram-clone-curso.firebaseapp.com",
+    projectId: "instagram-clone-curso",
+    storageBucket: "instagram-clone-curso.appspot.com",
+    messagingSenderId: "605506139553",
+    appId: "1:605506139553:web:9cb460c8b5d1cca325c7e0",
+    measurementId: "G-R64BQP39EM"
+  });
 
-// Use this to initialize the firebase App
-const firebaseApp = firebase.initializeApp(firebaseConfig);
-
-// Use these for db & auth
-const db = firebaseApp.firestore();
+const db = firebase.firestore();
 const auth = firebase.auth();
-const storage = firebase.storage()
-const functions = firebase.functions()
+const storage = firebase.storage();
+const functions = firebase.functions();
 
-
-export {firebaseApp,  db, auth, storage, functions}
+export {db, auth, storage, functions};
